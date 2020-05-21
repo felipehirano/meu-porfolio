@@ -1,5 +1,3 @@
-/* Made by Yago Estévez (Twitter: @yagoestevez.com) */
-
 *,
 *::before,
 *::after,
@@ -110,14 +108,6 @@ a:active {
   width: 100%;
   min-height: 100vh;
   z-index: -1;
-}
-
-.menu-container::before {
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Stars.svg?sanitize=true);
-}
-
-.menu-container::after {
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Trees.svg?sanitize=true) bottom repeat-x;
 }
 
 .menu-container.deactive {
@@ -410,7 +400,6 @@ a:active {
 #welcome-section::before {
   content: '';
   position: fixed;
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Stars.svg?sanitize=true);
   background-attachment: fixed;
   width: 100%;
   min-height: 100vh;
@@ -429,79 +418,8 @@ a:active {
   }
 }
 
-.forest {
-  position: absolute;
-  bottom: -300px;
-  left: 0;
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Trees.svg?sanitize=true) bottom left repeat-x;
-  background-size: cover;
-  width: 100%;
-  height: 80%;
-  opacity: 0;
-  animation: forest-move-in 1000ms 500ms forwards;
-  border-bottom: 300px solid #181d23;
-}
-
-@keyframes forest-move-in {
-  from {
-    background-position-y: 150%;
-  }
-  to {
-    opacity: 1;
-    background-position-y: 100%;
-  }
-}
-
-.silhouette {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Silhouette.svg?sanitize=true) bottom left no-repeat;
-  width: 50%;
-  height: 50%;
-  opacity: 0;
-  animation: silhouette-move-in 1000ms 800ms forwards;
-}
-
-@keyframes silhouette-move-in {
-  from {
-    background-position-x: 0;
-  }
-  to {
-    opacity: 1;
-    background-position-x: 50%;
-  }
-}
-
-.moon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  position: fixed;
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Moon.svg?sanitize=true) right 150% no-repeat;
-  background-size: 40% 40%;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0;
-  animation: moon-move-in 1.2s 1s forwards;
-}
-
-@keyframes moon-move-in {
-  from {
-    opacity: 0;
-    background-position: right 150%;
-  }
-  to {
-    opacity: 1;
-    background-position: top right;
-  }
-}
-
-/* Copy and CTA */
 #welcome-section .container {
-  width: fit-content;
+  width: fit-content;  /* Define a largura máxima */
   position: absolute;
   right: 0;
   top: 50%;
@@ -605,10 +523,6 @@ a:active {
       right: 50%;
     }
   }
-
-  .silhouette {
-    width: 100%;
-  }
 }
 
 
@@ -634,7 +548,6 @@ a:active {
   background: #fafafa;
   clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
   z-index: 5;
-  background: #fafafa url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Author_BG.jpg) center right no-repeat;
   background-attachment: fixed;
 }
 
@@ -929,7 +842,6 @@ a:active {
  *****************/
 
 #contact {
-  background: #181d23 url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/envelope.svg?sanitize=true) no-repeat right;
   clip-path: polygon(0 0, 20% 100px, 100% 0, 100% 100%, 0 100%);
   color: #fafafa;
   min-height: 100vh;

@@ -41,17 +41,9 @@ class App extends React.Component {
   componentDidMount() {
     const navbar = document.querySelector('#navbar');
     const header = document.querySelector('#welcome-section');
-    const forest = document.querySelector('.forest');
-    const silhouette = document.querySelector('.silhouette');
-    let forestInitPos = -300;
 
     window.onscroll = () => {
       let scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
-
-      if (scrollPos <= window.innerHeight) {
-        silhouette.style.bottom = `${parseInt(scrollPos / 6)}px`;
-        forest.style.bottom = `${parseInt(forestInitPos + scrollPos / 6)}px`;
-      }
 
       if (scrollPos - 100 <= window.innerHeight)
         header.style.visibility = header.style.visibility === 'hidden' && 'visible';
