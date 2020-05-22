@@ -12,9 +12,9 @@ const Header = props => {
             </span>
           </h1>
           <div className="buttons">
-            <a href="#projects">my portfolio</a>
+            <a href="#projects">my works</a>
             <a href="#contact" className="cta">
-              get in touch
+              contact
             </a>
           </div>
         </div>
